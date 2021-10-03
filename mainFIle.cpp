@@ -171,8 +171,7 @@ int main() {
         switch (choose) {
         case 0:
             if (isInit) { cout << "Ban da khoi tao danh sach roi!" << endl; } 
-            else { cout << "Khoi tao danh sach thanh cong!" << endl; isInit = true;}
-            system("pause");
+            else { cout << "Khoi tao danh sach thanh cong!" << endl; isInit = true; }
             break;
         case 1:
             if (!isInit) { cout << "Ban chua khoi tao danh sach! Hay khoi tao danh sach!"; continue; }
@@ -181,7 +180,6 @@ int main() {
         case 2:
             if (!isInit) { cout << "Ban chua khoi tao danh sach! Hay khoi tao danh sach!"; continue; }
             else myList.display();
-            system("pause");
             break;
         case 3:
             if (!isInit) { cout << "Ban chua khoi tao danh sach! Hay khoi tao danh sach!"; continue; }
@@ -195,31 +193,28 @@ int main() {
                 }   
                 
             }
-            system("pause");
             break;
         case 4:
             if (!isInit) { cout << "Ban chua khoi tao danh sach! Hay khoi tao danh sach!"; continue; }
             else { myList.sortList(); cout << "Da sap xep danh sach thanh cong!" << endl; }
-            system("pause");
             break;
         case 5: 
             if (!isInit) { cout << "Ban chua khoi tao danh sach! Hay khoi tao danh sach!"; continue; }
             else { cout << "Tong tien: " << myList.sumOf() << endl; }
-            system("pause");
             break;
         case 6:
             if (!isInit) { cout << "Ban chua khoi tao danh sach! Hay khoi tao danh sach!"; continue; }
             else { cout << "Nhung san pham co don gia > 250.000 dong: " << endl; myList.showUpper250K(); }
-            system("pause");
             break;
         case 7:
             if (!isInit) { cout << "Ban chua khoi tao danh sach! Hay khoi tao danh sach!"; continue; } 
             else { cout << "Thong tin cua don gia cao nhat: " << endl; myList.showHiggest(); }
-            system("pause");
+     
             break;
         default:
             break;
         }
+        system("pause");
     }
       
     return 0;
